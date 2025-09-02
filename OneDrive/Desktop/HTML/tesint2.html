@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form, label, input, select {
+            font-size: 24px;
+            button[type="submit"] {
+    font-size: 15px;
+    padding: 7px;
+}
+    </style>
+</head>
+<body>
+ <form>
+    <label for="name">Name</label> <br>
+    <input type="text" name="name" placeholder="Enter your name">
+    <br>
+    <label for="course">Course</label> <br>
+    <select name="course">
+        <option value="">Select your course</option>
+        <option value="bca">BCA</option>
+        <option value="bsc">BSc</option>
+        <option value="bcom">BCom</option>
+        <option value="btech">Btech</option>
+    </select>
+    <br>
+    <label for="gender">Gender</label> <br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+    <br>
+    <button type="submit">Submit</button>
+       
+    
+</form>
+    
+</body>
+</html>
