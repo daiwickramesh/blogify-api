@@ -7,7 +7,7 @@ const postRouter = require('./routes/posts.routes.js');
 
 // Home route
 app.get('/', (req, res) => {
-  res.send('Welcome to Blogify API');
+  res.send('Welcome to Blogify-Api');
 });
 
 // Mount router
