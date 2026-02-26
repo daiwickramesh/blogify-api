@@ -1,7 +1,7 @@
 const getAllPosts = (req, res) => {
   res.status(200).json({
     success: true,
-    message: 'All posts fetched successfully',
+    message: 'All posts fetched successfully!!',
     data: {
       posts: [
         { id: 1, title: 'First Post' },
@@ -13,13 +13,13 @@ const getAllPosts = (req, res) => {
 
 // Get post by ID
 const getPostById = (req, res) => {
-  const postId = req.params.id;
+  const Id = req.params.id;
 
   // Example: pretend we only have posts with IDs 1 and 2
-  if (postId === '1' || postId === '2') {
+  if (Id === '1' || Id === '2') {
     res.status(200).json({
       success: true,
-      data: { postId }
+      data: { Id }
     });
   } else {
     res.status(404).json({
