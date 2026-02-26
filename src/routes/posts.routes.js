@@ -2,9 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 // Import controller
-const postController = require('../controllers/posts.controller');
+const postController = require('../Controllers/post.controllers');
 
-// Route
+// Routes
 router.get('/', postController.getAllPosts);
+router.get('/:id', postController.getPostById);
 
 module.exports = router;
